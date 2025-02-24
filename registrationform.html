@@ -13,10 +13,37 @@
             <label for="first-name">Enter Your First Name: <input required id="first-name" type="text" /></label>
             <label for="last-name">Enter Your Last Name: <input required id="last-name" type="text"/></label>
             <label for="email" >Enter Your Email: <input required id="email" type="email"/></label>
-            <label for="new-password">Create a New Password: <input required id="new-password" type="password"/></label>
+            <label for="new-password">Create a New Password: <input required id="new-password" type="password" pattern="[a-z0-5]{8,}"/></label>
         </fieldset>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+          <legend>Account type (required)</legend>
+          <label for="personal-account"><input checked type="radio" name="account-type" id="personal-account"> Personal</label>
+          <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business</label>
+        </fieldset>
+        <fieldset>
+          <label for="profile-picture">
+             Upload a profile picture: <input type="file" name="" id="profile-picture">
+          </label>
+          <label for="age">
+            Input your age (years): <input type="number" name="" id="age" max="120" min="13">            
+          </label>
+          <label for="referrer"> How did you hear about us?
+            <select name="" id="referrer">
+              <option value="">(select one)</option>
+              <option value="1">freeCodeCamp News</option>
+              <option value="2">freeCodeCamp YouTube Channel</option>
+              <option value="3">freeCodeCamp Forum</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <label for="bio">Provide a bio: 
+            <textarea name="" id="bio" rows="3" cols="30"></textarea>
+          </label>   
+        </fieldset>
+        <label for="terms-and-conditions">
+          <input required type="checkbox" id="terms-and-conditions"> I accept the
+          <a href="https://www.freecodecamp.org/news/terms-of-service/"> terms and conditions</a>
+        </label>
         <input type="submit" value="Submit">
     </form>
   </body>
