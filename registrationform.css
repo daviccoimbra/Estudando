@@ -4,9 +4,23 @@ body {
     margin: 0;
     background-color: #1b1b32;
     color: #f5f6f7;
+    font-family:Tahoma ;
+    font-size: 16px;
   }
   
-  label {
+h1{
+  margin: 1em auto;
+  text-align: center;
+ }
+
+form{
+  margin:0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+}
+
+label {
     display: block;
     margin: 0.5rem 0;
   }
